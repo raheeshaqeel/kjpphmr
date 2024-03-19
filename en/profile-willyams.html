@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>KJPP Herman Meirizki & Rekan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>KJPP Herman Meirizki & Rekan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/logosr.png" type="image/x-icon">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/hmr.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+  <style>
+       #map {
+        margin-top: 20px; /* Atur jarak antara judul dan peta */
+    }
+    .contact-infoss {
+        margin-top: 0px; /* Atur jarak antara peta dan info kontak */
+    }
+    .jumbotron {
+    background: #2e3134;
+    color: white; /* Set text color to white or any contrasting color */
+    /* padding: 100px 25px; Adjust padding as needed */
+    /* text-align: center; */
+    padding-top: 9rem;
+  }
+  .jumbotron-2{
+    background: #fcb900;
+    padding-top: 9rem;
+  }
+  footer {
+        position: relative;
+        width: 100%;
+        background: #2e3134;
+        min-height: 100px;
+    }
+    footer .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(../assets/images/wave.png);
+        background-size: 1000px 100px;
+    }
+    footer .wave#wave2{
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWave 4s linear infinite;
+    }
+    footer .wave#wave3{
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animateWave2 4s linear infinite;
+    }
+    footer .wave#wave4{
+        z-index: 1000;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWave 3s linear infinite;
+    }
+    footer .wave#wave5{
+        z-index: 999;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animateWave 3s linear infinite;
+    }
+    @keyframes animateWave {
+        0%{
+            background-position-x: 1000px; 
+        } 
+        100% {
+            background-position-x: 0px; 
+
+        }
+    }
+    @keyframes animateWave2 {
+        0%{
+            background-position-x: 0px; 
+        } 
+        100% {
+            background-position-x: 1000px; 
+
+        }
+    }
+    .flex-container {
+      display: flex;
+    }
+  .hidden {
+    display: none;
+  }
+        strong {
+            color: #0066cc;
+        }
+
+  </style>
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <!-- <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div> -->
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="../assets/images/logor.png">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class=""><i class="fas fa-home"></i>&nbsp;Home</a></li>
+              <li class="scroll-to-section"><a href="index.html#services" class=""><i class="fas fa-edit"></i>&nbsp;Our Services</a></li>
+
+              <li class="dropdown">
+                <a href="cabang.html" class="dropbtn"><i class="fas fa-building"></i>&nbsp;Branch Offices</a>
+                <div class="dropdown-content">
+                  <!-- Add links for each branch office below -->
+                  <a href="cabang.html#pusat">Head Office</a>
+                  <a href="cabang.html#cb">South Jakarta</a>
+                  <a href="cabang.html#cb2">Tangerang</a>
+                  <a href="cabang.html#cb3">Sorong Papua</a>
+                  <a href="cabang.html#cb4">Surabaya</a>
+                </div>
+              </li>
+              <li class="scroll-to-section"><a href="partner.html" class="active"><i class="fas fa-handshake"></i>&nbsp;Partners</a></li>
+              <li class="scroll-to-section"><a href="aboutus.html"><i class="fas fa-info-circle"></i>&nbsp;About Us</a></li>
+              <li class="scroll-to-section"><a href="contact-us.html"><i class="fas fa-envelope"></i>&nbsp;Contact Us</a></li>
+            </ul>
+   
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <button id="languageSwitchBtn">
+    <img src="../assets/images/indo.png" style="width: 20px; image-resolution: 50px;" alt="">
+  </button>
+
+  
+  <button id="back-to-top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+   
+    <div id="pricing" class="pricing-tables">
+      <div class="tables-left-dec">
+          <img src="../assets/images/tables-left-dec.png" alt="">
+      </div>
+      <div class="tables-right-dec">
+          <img src="../assets/images/tables-right-dec.png" alt="">
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                  <div class="section-heading">
+                      <h2 class="vm">Company <em>Leaders</em></h2>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-3">
+                  <div class=""><img src="../assets/images/partner/Foto-Compro-removebg-preview.png" alt=""></div>
+              </div>
+              <div class="col-lg-9" data-aos="fade-right">
+                  <div class="itema first-item">
+                      <h4 class="pb-3">Partner</h4>
+                      <p>
+                          Willyams has obtained a bachelor's degree from STIE Trisakti and has more than 9 years of experience in business valuation, involved in various projects such as Stock Valuation, Fairness Opinions, etc. The appraisal license number is B-1.22.00627, and OJK STTD number is STTD.PB-57/PM.02/2023.
+                      </p>
+  
+                      <h5 class="pt-5 pb-3">Work Experience</h5>
+                      <p>
+                        <strong>2013&nbsp;-&nbsp;Present:</strong> KJPP Herman Meirizki dan Rekan
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div id="services" class="our-services section">
+      <div class="services-right-decs">
+          <img src="../assets/images/services-right-dec.png" alt="">
+      </div>
+      <div class="container">
+          <div class="services-left-decs">
+              <!-- <img src="../assets/images/services-left-dec.png" alt=""> -->
+          </div>
+          <div class="row itemsss" id="pusat" style="border-left: #fcb900 solid 2px;">
+              <div class="col-lg-12">
+                  <!-- No changes needed here -->
+                  <div class="info contact-infoss">
+                      <h5 class="text-start" style="">Project Experience</h5>
+                      <p>
+                          <ul style="line-height: 2;">
+                              <li>PT Multistrada Arah Sarana Tbk.</li>
+                              <li>PT Martina Berto Tbk.</li>
+                              <li>PT Champion Pacific Indonesia Tbk.</li>
+                              <li>PT Multi Bintang Indonesia Tbk.</li>
+                              <li>PT Michelin Indonesia</li>
+                              <li>PT Sinar Digital Terdepan (Xendit Group)</li>
+                              <li>PT Samudera Indonesia Tbk.</li>
+                              <li>Celebes Capital</li>
+                              <!-- Add other companies as needed -->
+                          </ul>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="footer-dec">
+      <img src="../assets/images/footer-dec.png" alt="">
+  </div>
+  
+  <footer>
+    <div class="waves">
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+        <div class="wave" id="wave5"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about footer-item">
+                    <div class="w-50 pt-5">
+                        <a href="index.html"><img src="../assets/images/logop-removebg-preview.png" alt=""></a>
+                    </div>
+                    <p class="p-5 text-white">We are Independent Appraisers. Trust | Integrity | Professionalism | Synergy</p>
+                    <p>
+                        <h4 class="text-white">Business License Number :</h4>
+                    </p>
+                    <p class="text-white iu">2.14.0120 KMK 66/KM.1/2014</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="services footer-item">
+                    <h4 class="text-white">Resources</h4>
+                    <ul>
+                        <li><a href="https://mappi.or.id/SitePages/Default.aspx"><img src="../assets/images/mappi2.png" class="w-50 pt-2" srcset=""></a></li>
+                        <li><a href="https://www.ivsc.org/"><img src="../assets/images/ivsc-blue.png" class="w-50 pt-2" srcset=""></a></li>
+                        <li><a href="https://www.ojk.go.id/id/Default.aspx"><img src="../assets/images/ojk-blue.png" class="w-50 pt-2" srcset=""></a> </li>
+                        <li>
+                            <a href="https://www.pefindo.com/"><img src="../assets/images/pefindo-blue.png" class="w-50 pt-2" srcset=""></a>
+                          </li>
+                          <li><a href="https://www.phei.co.id/"><img src="../assets/images/phai.jpeg" class="w-50 pt-2" srcset=""></a> </li>
+                        <li>
+                            <a href="https://www.pefindo.com/"><img src="../assets/images/bi.png" class="w-50 pt-2" srcset=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="copyright">
+                    <p>Copyright © 2023 KJPP-HMR.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/owl-carousel.js"></script>
+<script src="../assets/js/animation.js"></script>
+<script src="../assets/js/imagesloaded.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script src="../assets/font-awesome/js/pro.js"></script>
+<!-- Language Switch Script -->
+  
+<!-- Inisialisasi AOS -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Inisialisasi Accordion -->
+<script>
+  $(document).on("click", ".naccs .menu div", function() {
+    var numberIndex = $(this).index();
+
+    if (!$(this).is("active")) {
+      $(".naccs .menu div").removeClass("active");
+      $(".naccs ul li").removeClass("active");
+
+      $(this).addClass("active");
+      $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+      var listItemHeight = $(".naccs ul")
+        .find("li:eq(" + numberIndex + ")")
+        .innerHeight();
+      $(".naccs ul").height(listItemHeight + "px");
+    }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+var backToTopButton = document.getElementById("back-to-top-btn");
+
+// Function to check scroll position and toggle button visibility
+function toggleBackToTopButton() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+}
+
+// Show/hide the button based on scroll position
+window.onscroll = toggleBackToTopButton;
+
+// Scroll to the top when the button is clicked
+backToTopButton.onclick = function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+
+// Toggle button visibility when the page is loaded
+toggleBackToTopButton();
+});
+
+</script>
+<script>
+  // Fungsi untuk beralih antara konten Bahasa Inggris dan Indonesia
+  function toggleLanguage() {
+    // Dapatkan URL root dari halaman saat ini
+    var currentURL = window.location.href;
+    
+    // Periksa apakah bahasa saat ini adalah Indonesia
+    var isIndonesian = currentURL.includes('/id/');
+
+    // Bangun URL baru berdasarkan bahasa saat ini
+    var newURL = isIndonesian ? currentURL.replace('/id/', '/en/') : currentURL.replace('/en/', '/id/');
+
+    // Redirect ke URL baru
+    window.location.href = newURL;
+  }
+
+  // Pasang acara klik pada tombol beralih bahasa
+  document.getElementById("languageSwitchBtn").addEventListener("click", function() {
+    // Panggil fungsi toggleLanguage
+    toggleLanguage();
+  });
+</script>
+
+</body>
+</html>

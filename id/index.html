@@ -1,0 +1,1025 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>KJPP Herman Meirizki & Rekan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/logosr.png" type="image/x-icon">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/hmr.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--
+
+TemplateMo 565 Onix Digital
+
+https://templatemo.com/tm-565-onix-digital
+
+-->
+  </head>
+  <style>
+    body::-webkit-scrollbar{
+      display: none;
+    }
+    body{
+      overflow-x: hidden;
+    }
+       #map {
+        margin-top: 20px; /* Atur jarak antara judul dan peta */
+    }
+    .contact-info {
+        margin-top: 20px; /* Atur jarak antara peta dan info kontak */
+    }
+    .jumbotron {
+      background: rgb(42,40,39);
+background: linear-gradient(270deg, rgba(42,40,39,1) 0%, rgba(82,79,76,1) 35%, rgba(172,171,166,1) 100%);
+    color: white; /* Set text color to white or any contrasting color */
+    /* padding: 100px 25px; Adjust padding as needed */
+    /* text-align: center; */
+    padding-top: 9rem;
+  }
+  .jumbotron-2{
+    background: rgb(230,121,25);
+background: linear-gradient(90deg, rgba(230,121,25,1) 0%, rgba(222,125,7,1) 35%, rgba(255,205,0,1) 100%);
+    padding-top: 3rem;
+  }
+  footer {
+        position: relative;
+        width: 100%;
+        background: #2e3134;
+        min-height: 100px;
+    }
+    footer .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(../assets/images/wave.png);
+        background-size: 1000px 100px;
+    }
+    footer .wave#wave2{
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWave 4s linear infinite;
+    }
+    footer .wave#wave3{
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animateWave2 4s linear infinite;
+    }
+    footer .wave#wave4{
+        z-index: 1000;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWave 3s linear infinite;
+    }
+    footer .wave#wave5{
+        z-index: 999;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animateWave 3s linear infinite;
+    }
+    @keyframes animateWave {
+        0%{
+            background-position-x: 1000px; 
+        } 
+        100% {
+            background-position-x: 0px; 
+
+        }
+    }
+    @keyframes animateWave2 {
+        0%{
+            background-position-x: 0px; 
+        } 
+        100% {
+            background-position-x: 1000px; 
+
+        }
+    }
+    .hidden {
+    display: none;
+  } 
+  table{
+    font-weight: bold;
+  }
+  </style>
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="../assets/images/logor.png">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <!-- ***** Menu Start ***** -->
+<ul class="nav">
+  <li class="scroll-to-section"><a href="index.html" class="active"><i class="fas fa-home"></i>&nbsp;Beranda</a></li>
+  <li class="scroll-to-section"><a href="index.html#services" class=""><i class="fas fa-edit"></i>&nbsp;Layanan Kami</a></li>
+  <li class="dropdown">
+    <a href="cabang.html" class="dropbtn"><i class="fas fa-building"></i>&nbsp;Kantor Cabang</a>
+    <div class="dropdown-content">
+      <!-- Tambahkan link untuk setiap kantor cabang di bawah ini -->
+      <a href="cabang.html#pusat">Pusat</a>
+      <a href="cabang.html#cb">Jakarta Selatan</a>
+      <a href="cabang.html#cb2">Tangerang</a>
+      <a href="cabang.html#cb3">Sorong Papua</a>
+      <a href="cabang.html#cb4">Surabaya</a>
+    </div>
+  </li>
+  <li class="scroll-to-section"><a href="partner.html"><i class="fas fa-handshake"></i>&nbsp;Rekan</a></li>
+  <li class="scroll-to-section"><a href="aboutus.html"><i class="fas fa-info-circle"></i>&nbsp;Tentang Kami</a></li>
+  <li class="scroll-to-section"><a href="contact-us.html"><i class="fas fa-envelope"></i>&nbsp;Hubungi Kami</a></li>
+</ul>
+   
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <button id="back-to-top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <button id="languageSwitchBtn">
+    <img src="../assets/images/usa.png" style="width: 20px; image-resolution: 50px;" alt="">
+  </button>
+
+  <div data-lang="id">
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="owl-carousel owl-banner">
+                <div class="item header-text">
+                  <h6 class="">Selamat Datang Di <p><em> Kantor Jasa Penilaian Publik </em><span>Herman Meirizki & Rekan</span></p></h6>
+                  <p>
+                    <img src="../assets/images/rbb.png" class="w-50" srcset="">
+                  </p>
+                  <h2>Your <em>Professional</em> Valuation <span>Partners</span></h2>
+                </div>
+                <div class="item header-text">
+                  <h6>Hubungi Kami</h6>
+                  <h2>Silahkan <em>Hubungi</em> <span>Kami</span></h2>
+                  <p>Jika Anda membutuhkan bantuan atau memiliki pertanyaan, jangan ragu untuk mengirimkan pesan kepada kami. Kami akan dengan senang hati membantu Anda.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <a href="contact-us.html">Contact</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item header-text">
+                  <h6>Kurs Uang & Inflasi</h6>
+                  <h2>Cek Kurs Uang <em>& </em> <span>Data Inflasi </span></h2>
+                  <p>Jika Anda membutuhkan bantuan untuk mengecek kurs mata uang dan data inflasi dari Bank Indonesia.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <a href="https://www.bi.go.id/id/statistik/informasi-kurs/transaksi-bi/default.aspx">Kurs Uang</a>
+                    </div>
+                    &nbsp;
+                    <div class="main-blue-button-hover">
+                      <a href="https://www.bi.go.id/id/statistik/indikator/data-inflasi.aspx">Data Inflasi</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="services-right-dec">
+      <img src="../assets/images/services-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="services-left-dec">
+        <img src="../assets/images/services-left-dec.png" alt="">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading" data-aos="fade-down">
+            <h2>Apa <em>yang kami</em> Lakukan <span>?</span></h2>
+            <span>Pelayanan Kami</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item" data-aos="fade-down" data-aos-duration="800" data-aos-delay="300">
+              <a href="detail-services.html">
+                <h4>Penilaian Saham</h4>
+                <div class="icon"><img src="../assets/images/aaaa.png" alt=""></div>
+                <p class="text-align">
+                  Model penilaian yang termasuk dalam kategori ini antara lain model diskon dividen, model arus kas terdiskonto, model pendapatan residual, dan model berbasis aset.
+                </p>
+              </a>
+            </div>
+            <div class="item" data-aos="fade-down" data-aos-duration="900" data-aos-delay="400">
+              <a href="detail-services.html">
+                <h4>Penilaian Properti</h4>
+                <div class="icon"><img src="../assets/images/gd.png" alt=""></div>
+                <p>
+                  Proses untuk memperkirakan nilai pasar properti pada tanggal penilaian. Tujuan penilaian adalah untuk tujuan jual beli, tujuan pajak, hipotek properti, dll
+                </p>
+              </a>
+            </div>
+            <div data-aos="fade-down" class="item" data-aos-duration="1000" data-aos-delay="500">
+              <a href="detail-services.html">
+                <h4>Pendapat Kewajaran</h4>
+                <div class="icon"><img src="../assets/images/fu.png" alt=""></div>
+                <p>
+                  Evaluasi profesional oleh bank investasi atau pihak ketiga lainnya, apakah persyaratan merger, akuisisi, pembelian kembali, spin-off, atau privatisasi.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <div id="about" class="about-us section">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 align-self-center">
+            <div class="left-image">
+              <div class="video-background" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                <video autoplay loop muted playsinline>
+                  <source src="../assets/images/tests.mp4" type="video/mp4">
+                </video>
+              </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="section-heading">
+              <h2 class="text-white" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">Kami <em>Melakukan</em> <span>Penilaian</span> Dengan Bijak</h2>
+              <p class="text-white" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                Penilaian kami didasarkan pada data yang akurat dan relevan, serta diintegrasikan dengan informasi dari berbagai sumber untuk memastikan konsistensi dan keberlanjutan dalam evaluasi
+              </p>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="fact-item">
+                    <div class="count-area-content">
+                      <div class="icon" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                        <img src="../assets/images/client.png" alt="">
+                      </div>
+                      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="count-digit text-white">204</div>
+                      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="count-title">Client</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="fact-item">
+                    <div class="count-area-content">
+                      <div class="icon" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                        <img src="../assets/images/bank.png" data-aos="fade-down" alt="">
+                      </div>
+                      <div class="count-digit text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">21</div>
+                      <div class="count-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Rekan Bank</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="fact-item">
+                    <div class="count-area-content">
+                      <div class="icon" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                        <img src="../assets/images/bb.png" alt="">
+                      </div>
+                      <div class="count-digit text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">5</div>
+                      <div data-aos="fade-up" class="count-title" data-aos-duration="1000" data-aos-delay="500">Kantor Cabang</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="border: none;">
+        <path fill="#ffff" d="M0,64L80,90.7C160,117,320,171,480,197.3C640,224,800,224,960,213.3C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="services-right-dec">
+      <img src="../assets/images/services-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="services-left-dec">
+        <img src="../assets/images/services-left-dec.png" alt="">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2 class="klien">Klien<em> Kami</em></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item">
+              <h4>Asuransi Mobil</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/3.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>Agro Investama Group</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/agro-investama-logo.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>Bahana Sekuritas</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/bahana-logo.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>Parastar Group</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/parastar-logo.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Kino Indonesia Tbk</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/kino-logo.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PPA Pertambangan</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/ppa-logo.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Swadharma SI</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/ssi-logo.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Telenet Indonesia</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/telenet-logo.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Pelita Samudra</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/pelita-samudra-shipping.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Integrasi Jaringan</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/PT. Integrasi Jaringan Indonesia.jpg" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Batamec</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/PT. Batamec .jpg" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Industri Wijaya Kusuma</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/PT. Kawasan Industri Wijayakusuma.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Sigma Petrotech</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/sigmapetrotech.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Sri Rejeki Isman</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/spitex(5).png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Tangmas</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/2-Tang.jpg" alt=""></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item">
+              <h4>PT Mulchindo</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/a.jpg" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>Klub Bogor Raya</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/b.jpg" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Heksa Insurance</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/c.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT. Multistrada Arah Sarana Tbk</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/d.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>Share Tea</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/e.jpg" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>Bengkel BOS</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/f.jpg" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Taman Wisata Candi</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/taman-wasita.jpg" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Martina Berto</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/martina berto.jpg" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Temas, Tbk</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/pt-temas.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Perta Arun Gas</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/pertagas.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Waskita Karya Realty</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/PT. Waskita Karya Realty.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Polytama Propindo</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/pt.polytama propindo.jpg" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Aviasi Pariwisata</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/pt-aviasi-pariwisata-indonesia_220719151745-624.jpg" alt=""></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item">
+              <h4>PT Transwisata Prima Aviation</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/Transwisata_Prima_Aviation.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Transportasi Gas Indonesia</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/unnamed.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Krakatau Sarana Property</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/PT. Krakatau Sarana Property.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Multi Superindo Manunggal</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/PT. Multi Superindo Manunggal.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Sinar Tambang Arthalestari</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/PT. Sinar Tambang Arthalestari.png" alt=""></div>
+              </a>
+            </div>
+            <div class="item">
+              <h4>PT Pelayaran Kartika Samudra Adijaya</h4>
+              <a href="">
+                <div class=""><img src="../assets/images/pt_pelayaran_kartika_samudra_adijaya_logo.png" alt=""></div>
+              </a>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="services-right-dec">
+      <img src="../assets/images/services-right-dec.png" alt="">
+    </div>
+    <div class="jumbotron-2">
+    <div class="container">
+      <div class="services-left-dec">
+        <img src="../assets/images/services-left-dec.png" alt="">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2 class="klien">Rekan <em class="text-white">Bank</em></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/Logo-BCA.jpg" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/logo-BRI-Agro.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/logo-BTN.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/logo-heksa-ori.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/logo-Nobu.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/Logo-BNI.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/Logo-Bank-Muamalat.jpg" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/Logo BRI (Bank Rakyat Indonesia).png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/Logo-Bank-Sinarmas.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/Logo-OCBC.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/Logo-OK-Bank.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+              <div class=""><img src="../assets/images/Logo-Panin-Dubai.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+              <div class=""><img src="../assets/images/Logo-Victoria.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/Logo-Bank-Hana.jpg" alt=""></div>
+            </div>
+            <div class="item shadow">
+              <div class=""><img src="../assets/images/mandiri.png" alt=""></div>
+          </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/logo-Panin-Bank.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/Logo-Artha-Graha.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/Logo-Bank-Jatim.png" alt=""></div>
+            </div>
+            <div class="item shadow">
+                <div class=""><img src="../assets/images/download (3).png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L21.8,37.3C43.6,43,87,53,131,90.7C174.5,128,218,192,262,213.3C305.5,235,349,213,393,186.7C436.4,160,480,128,524,106.7C567.3,85,611,75,655,90.7C698.2,107,742,149,785,154.7C829.1,160,873,128,916,122.7C960,117,1004,139,1047,160C1090.9,181,1135,203,1178,181.3C1221.8,160,1265,96,1309,96C1352.7,96,1396,160,1418,192L1440,224L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
+  </div>
+</div>
+
+<div id="services" class="our-services section">
+  <div class="services-right-dec">
+    <img src="../assets/images/services-right-dec.png" alt="">
+  </div>
+  <div class="container">
+    <div class="services-left-dec">
+      <img src="../assets/images/services-left-dec.png" alt="">
+    </div>
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="section-heading" data-aos="fade-down">
+          <h2 class="portfolio">Portfolio <em>Perusahaan</em></h2>
+          <span>Project Besar</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="owl-carousel owl-services">
+          <div class="item" data-aos="fade-down" style="border-top: 2px solid #fcb900;border-bottom: 2px solid #fcb900;" data-aos-duration="800" data-aos-delay="300">
+            <a href="">
+              <div class=""><img src="../assets/images/kabel optik.png" alt="" style="width: 250px; align-items: center;" class="mx-auto"></div>
+              <h4 class="pt-3">PT Integrasi Jaringan Indonesia</h4>
+              <p>
+                <h6 class="text-start mb-lg-3">
+                  Penilaian :
+                </h6>
+                  <table>
+                    <tr class="">
+                      <td class="text-start">Objek</td>
+                      <td>&nbsp;:&nbsp;</td>
+                      <td>Jaringan Kabel Optik</td>
+                    </tr>
+                    <tr>
+                      <td class="text-start">Lokasi</td>
+                      <td>&nbsp;:&nbsp;</td>
+                      <td>Seluruh Pulau Jawa</td>
+                    </tr>
+                  </table>
+                </p>
+            </a>
+          </div>
+          <div class="item" data-aos="fade-down" data-aos-duration="900" data-aos-delay="400"  style="border-top: 2px solid #fcb900;border-bottom: 2px solid #fcb900;">
+            <a href="">
+              <div class=""><img src="../assets/images/waskita.jpg" style="width: 250px; align-items: center;" class="mx-auto" alt=""></div>
+              <h4 class="pt-3">PT Waskita Karya Realty Tbk</h4>
+              <p>
+              <h6 class="text-start mb-lg-3">
+                Penilaian :
+              </h6>
+                <table>
+                  <tr class="">
+                    <td class="text-start">Objek</td>
+                    <td>&nbsp;:&nbsp;</td>
+                    <td>Tanah & Bangunan</td>
+                  </tr>
+                  <tr>
+                    <td class="text-start">Lokasi</td>
+                    <td>&nbsp;:&nbsp;</td>
+                    <td>Seluruh Indonesia</td>
+                  </tr>
+                </table>
+              </p>
+            </a>
+          </div>
+          <div data-aos="fade-down" class="item" data-aos-duration="1000" data-aos-delay="500"  style="border-top: 2px solid #fcb900;border-bottom: 2px solid #fcb900;">
+            <a href="">
+              <div class=""><img src="../assets/images/pabrik2.jpeg" alt="" style="width: 250px; align-items: center;" class="mx-auto"></div>
+              <h4 class="pt-3">PT Polytama Propindo</h4>
+              <p>
+                <h6 class="text-start mb-lg-3">
+                  Penilaian :
+                </h6>
+                <table>
+                  <tr class="">
+                    <td class="text-start">Objek</td>
+                    <td>&nbsp;:&nbsp;</td>
+                    <td>Pabrik Kimia</td>
+                  </tr>
+                  <tr>
+                    <td class="text-start">Lokasi</td>
+                    <td>&nbsp;:&nbsp;</td>
+                    <td>Jawa Barat</td>
+                  </tr>
+                </table>
+              </p>
+            </a>
+          </div>
+          <div data-aos="fade-down" class="item" data-aos-duration="1000" data-aos-delay="500"  style="border-top: 2px solid #fcb900;border-bottom: 2px solid #fcb900;">
+            <a href="">
+              <div class=""><img src="../assets/images/ksp.png" alt="" style="width: 250px; align-items: center;" class="mx-auto"></div>
+              <h4 class="pt-3">Krakatau Sarana Properti</h4>
+              <p>
+                <h6 class="text-start mb-lg-3">
+                  Penilaian :
+                </h6>
+                <table>
+                  <tr class="">
+                    <td class="text-start">Objek</td>
+                    <td>&nbsp;:&nbsp;</td>
+                    <td>Tanah</td>
+                  </tr>
+                  <tr>
+                    <td class="text-start">Lokasi</td>
+                    <td>&nbsp;:&nbsp;</td>
+                    <td>Banten</td>
+                  </tr>
+                </table>
+              </p>
+            </a>
+          </div>
+          <div data-aos="fade-down" class="item" data-aos-duration="1000" data-aos-delay="500"  style="border-top: 2px solid #fcb900;border-bottom: 2px solid #fcb900;">
+            <a href="">
+              <div class=""><img src="../assets/images/gas.jpg" style="width: 250px; align-items: center;" class="mx-auto" alt=""></div>
+              <h4 class="pt-3">PT Transportasi Gas Indonesia</h4>
+              <p>
+                <h6 class="text-start mb-lg-3">
+                  Penilaian :
+                </h6>
+                <table>
+                  <tr class="">
+                    <td class="text-start">Objek</td>
+                    <td>&nbsp;:&nbsp;</td>
+                    <td>Peralatan</td>
+                  </tr>
+                  <tr>
+                    <td class="text-start">Lokasi</td>
+                    <td>&nbsp;:&nbsp;</td>
+                    <td>Jakarta</td>
+                  </tr>
+                </table>
+              </p>
+            </a>
+          </div>
+          <div data-aos="fade-down" class="item" data-aos-duration="1000" data-aos-delay="500"  style="border-top: 2px solid #fcb900;border-bottom: 2px solid #fcb900;">
+            <a href="">
+              <div class=""><img src="../assets/images/tambang2.jpeg" style="width: 250px; align-items: center;" class="mx-auto" alt=""></div>
+              <h4 class="pt-3">PT Intraco Penta</h4>
+              <p>
+                <h6 class="text-start mb-lg-3">
+                  Penilaian :
+                </h6>
+                <table>
+                  <tr class="">
+                    <td class="text-start">Objek</td>
+                    <td>&nbsp;:&nbsp;</td>
+                    <td>Alat Berat</td>
+                  </tr>
+                  <tr>
+                    <td class="text-start">Lokasi</td>
+                    <td>&nbsp;:&nbsp;</td>
+                    <td>Seluruh Indonesia</td>
+                  </tr>
+                </table>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700" >
+                <div class="section-heading">
+                    <h2>Lokasi <em>Kantor </em> Pusat
+                        <p><span>Penilaian Properti</span></p></h2>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.693625980226!2d106.83991321149041!3d-6.303925261670086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed175d5b358d%3A0x26d5ecee1b2d0d98!2sThe%20AKKAS%20Commercial%20Building!5e0!3m2!1sid!2sid!4v1683617361338!5m2!1sid!2sid" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-lg-5 p-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+                <!-- Tidak perlu ada perubahan di sini -->
+                <div class="info contact-info">
+                  <ul>
+                    <li>
+                      <span><i class="fas fa-location"></i><a href="https://www.google.com/maps/place/KJPP+Herman+Meirizki+dan+Rekan+(Kantor+Pusat)/@-6.3038712,106.8426196,15z/data=!4m6!3m5!1s0x2e69f3c4eaf7275f:0x8708e52521147978!8m2!3d-6.3038712!4d106.8426196!16s%2Fg%2F11g1pyfds1?entry=ttu">
+                        The AKKAS Commercial Building Lt.6, Jl. T.B. Simatupang No.23 RT.011 RW. 004, Tanjung Barat, Jagakarsa, Jakarta Selatan 12530
+                      </a></span>
+                    </li>
+                    <li>
+                      <span><i class="fa fa-phone-office text-sm"></i><a>+62 21 2940 7271</a></span>
+                    </li>
+                    <li>
+                      <span><i class="fa fa-mobile text-sm"></i><a> +62 812 8807 0436</a></span>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="contact-dec">
+      <img src="../assets/images/contact-dec.png" alt="">
+    </div> -->
+    <div class="contact-left-dec">
+      <!-- <img src="../assets/images/contact-left-dec.png" style="z-index: 0;" alt=""> -->
+    </div>
+  </div>
+
+  <div class="footer-dec">
+    <img src="../assets/images/footer-dec.png" alt="">
+  </div>
+
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+      <div class="wave" id="wave5"></div>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about footer-item">
+            <div class="w-50 pt-5">
+              <a href="index.html"><img src="../assets/images/logop-removebg-preview.png" alt=""></a>
+            </div>
+            <p class="p-5 text-white">Kami Penilai Independen. Kepercayaan | Integritas | Profesionalisme | Sinergi</p>
+            <p>
+              <h4 class="text-white">Nomor Izin Usaha :</h4>
+            </p>
+            <p class="text-white iu">2.14.0120 KMK 66/KM.1/2014</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="services footer-item">
+            <h4 class="text-white">Sumber Daya</h4>
+            <ul>
+              <li><a href="https://mappi.or.id/SitePages/Default.aspx"><img src="../assets/images/mappi2.png" class="w-50 pt-2" srcset=""></a></li>
+              <li><a href="https://www.ivsc.org/"><img src="../assets/images/ivsc-blue.png" class="w-50 pt-2" srcset=""></a></li>
+              <li><a href="https://www.ojk.go.id/id/Default.aspx"><img src="../assets/images/ojk-blue.png" class="w-50 pt-2" srcset=""></a> </li>
+              <li>
+                <a href="https://www.pefindo.com/"><img src="../assets/images/pefindo-blue.png" class="w-50 pt-2" srcset=""></a> 
+              </li>
+              <li><a href="https://www.phei.co.id/"><img src="../assets/images/phai.jpeg" class="w-50 pt-2" srcset=""></a> </li>
+              <li>
+                <a href="https://www.pefindo.com/"><img src="../assets/images/bi.png" class="w-50 pt-2" srcset=""></a>
+            </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright">
+            <p>Copyright © 2023 KJPP-HMR. 
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../assets/js/owl-carousel.js"></script>
+  <script src="../assets/js/animation.js"></script>
+  <script src="../assets/js/imagesloaded.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <script src="../assets/font-awesome/js/pro.js"></script>
+  <script>
+    // Fungsi untuk beralih antara konten Bahasa Inggris dan Indonesia
+    function toggleLanguage() {
+      // Dapatkan URL root dari halaman saat ini
+      var currentURL = window.location.href;
+      
+      // Periksa apakah bahasa saat ini adalah Indonesia
+      var isIndonesian = currentURL.includes('/id/');
+  
+      // Bangun URL baru berdasarkan bahasa saat ini
+      var newURL = isIndonesian ? currentURL.replace('/id/', '/en/') : currentURL.replace('/en/', '/id/');
+  
+      // Redirect ke URL baru
+      window.location.href = newURL;
+    }
+  
+    // Pasang acara klik pada tombol beralih bahasa
+    document.getElementById("languageSwitchBtn").addEventListener("click", function() {
+      // Panggil fungsi toggleLanguage
+      toggleLanguage();
+    });
+  </script>
+  
+
+  <script>
+  // Acc
+    $(document).on("click", ".naccs .menu div", function() {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+          $(".naccs .menu div").removeClass("active");
+          $(".naccs ul li").removeClass("active");
+
+          $(this).addClass("active");
+          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+          var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+          $(".naccs ul").height(listItemHeight + "px");
+        }
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  var backToTopButton = document.getElementById("back-to-top-btn");
+
+  // Function to check scroll position and toggle button visibility
+  function toggleBackToTopButton() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  }
+
+  // Show/hide the button based on scroll position
+  window.onscroll = toggleBackToTopButton;
+
+  // Scroll to the top when the button is clicked
+  backToTopButton.onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  // Toggle button visibility when the page is loaded
+  toggleBackToTopButton();
+});
+
+  </script>
+</body>
+</html>

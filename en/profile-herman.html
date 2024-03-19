@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>KJPP Herman Meirizki & Rekan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>KJPP Herman Meirizki & Rekan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/logosr.png" type="image/x-icon">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/hmr.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+  <style>
+       #map {
+        margin-top: 20px; /* Atur jarak antara judul dan peta */
+    }
+    .contact-infoss {
+        margin-top: 0px; /* Atur jarak antara peta dan info kontak */
+    }
+    .jumbotron {
+    background: #2e3134;
+    color: white; /* Set text color to white or any contrasting color */
+    /* padding: 100px 25px; Adjust padding as needed */
+    /* text-align: center; */
+    padding-top: 9rem;
+  }
+  .jumbotron-2{
+    background: #fcb900;
+    padding-top: 9rem;
+  }
+  footer {
+        position: relative;
+        width: 100%;
+        background: #2e3134;
+        min-height: 100px;
+    }
+    footer .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(../assets/images/wave.png);
+        background-size: 1000px 100px;
+    }
+    footer .wave#wave2{
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWave 4s linear infinite;
+    }
+    footer .wave#wave3{
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animateWave2 4s linear infinite;
+    }
+    footer .wave#wave4{
+        z-index: 1000;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWave 3s linear infinite;
+    }
+    footer .wave#wave5{
+        z-index: 999;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animateWave 3s linear infinite;
+    }
+    @keyframes animateWave {
+        0%{
+            background-position-x: 1000px; 
+        } 
+        100% {
+            background-position-x: 0px; 
+
+        }
+    }
+    @keyframes animateWave2 {
+        0%{
+            background-position-x: 0px; 
+        } 
+        100% {
+            background-position-x: 1000px; 
+
+        }
+    }
+    .flex-container {
+      display: flex;
+    }
+  .hidden {
+    display: none;
+  }
+        strong {
+            color: #0066cc;
+        }
+
+  </style>
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <!-- <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div> -->
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="../assets/images/logor.png">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class=""><i class="fas fa-home"></i>&nbsp;Home</a></li>
+              <li class="scroll-to-section"><a href="index.html#services" class=""><i class="fas fa-edit"></i>&nbsp;Our Services</a></li>
+
+              <li class="dropdown">
+                <a href="cabang.html" class="dropbtn"><i class="fas fa-building"></i>&nbsp;Branch Offices</a>
+                <div class="dropdown-content">
+                  <!-- Add links for each branch office below -->
+                  <a href="cabang.html#pusat">Head Office</a>
+                  <a href="cabang.html#cb">South Jakarta</a>
+                  <a href="cabang.html#cb2">Tangerang</a>
+                  <a href="cabang.html#cb3">Sorong Papua</a>
+                  <a href="cabang.html#cb4">Surabaya</a>
+                </div>
+              </li>
+              <li class="scroll-to-section"><a href="partner.html" class="active"><i class="fas fa-handshake"></i>&nbsp;Partners</a></li>
+              <li class="scroll-to-section"><a href="aboutus.html"><i class="fas fa-info-circle"></i>&nbsp;About Us</a></li>
+              <li class="scroll-to-section"><a href="contact-us.html"><i class="fas fa-envelope"></i>&nbsp;Contact Us</a></li>
+            </ul>
+   
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <button id="languageSwitchBtn">
+    <img src="../assets/images/indo.png" style="width: 20px; image-resolution: 50px;" alt="">
+  </button>
+
+  
+  <button id="back-to-top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <div id="pricing" class="pricing-tables">
+    <div class="tables-left-dec">
+        <img src="../assets/images/tables-left-dec.png" alt="">
+    </div>
+    <div class="tables-right-dec">
+        <img src="../assets/images/tables-right-dec.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2 class="vm">Company <em>Leaders</em></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class=""><img src="../assets/images/partner/Hermanruslim.png" alt=""></div>
+            </div>
+            <div class="col-lg-9" data-aos="fade-right">
+                <div class="itema first-item">
+                    <h4 class="">Partner</h4>
+                    <!-- Language Switch Button -->
+                    <h5 class="pt-3 pb-3">Experience</h5>
+                    <h5 class="pb-3">Period as a Trainer</h5>
+                    <p>
+                        <strong>November 11, 2009</strong>, IICD (Indonesia Institute for Corporate Directorship). Job: Finance for Directors – Speaker. Topic: Assessment of Financial Statement Interpretation and Performance;<br>
+                        <strong>April 8, 2010</strong>, Finance for Directors – Speaker. Weighted Average Cost of Capital (WACC), Capital Financing;<br>
+                        <strong>October 9-11, 2010</strong>, Bandung, IICD-ASGARA – Risk Management Integration for State-Owned Insurance Companies;<br>
+                        <strong>May 2011</strong>, Yogyakarta, IICD seminar on 'Role of the Board, Director's Duties, and Legal Responsibilities';<br>
+                        <strong>November 12, 2010</strong>, Untar "Discussion Forum on Corporate Governance and Risk Management";<br>
+                        <strong>July 09, 2011 – July 14, 2012</strong>, Internal Basic Accounting Training for BNI ODP, Batch II, as an Instructor;<br>
+                        <strong>August 11, 2011</strong>, Le Meridien Hotel, Golden Bridge Indonesia, Speaker "Strategic Assessment for Leadership";<br>
+                        <strong>September 15, 2011</strong>, Tarumanagara University, "National Seminar on Entrepreneurship and Business Innovation I" as Moderator.
+                    </p>
+
+                    <h5 class="pt-5 pb-3">Period as a Professional</h5>
+                    <p>
+                        <strong>2014 – Present</strong>, KAP Herman Ruslim. Functional Position: Head of KAP;<br>
+                        <strong>2013 – Present</strong>, KJPP Herman Meirizki and Partners. Functional Position: Managing Partner;<br>
+                        <strong>2012 – Present</strong>, Head of MAKSI and PPA Untar;<br>
+                        <strong>2010 – 2013</strong>, KAP Utoyo Widyasari and Iwan. Functional Position: Audit Manager. Job Responsibilities: General Audit, Agreed-upon Procedures, and Supervision as well as review of audit working papers;<br>
+                        <strong>2009 – 2012</strong>, KJPP Paulus Tedjalaksana. Functional Position: Associate Managing Partner. Job Responsibilities: Business/Company Assessment. Including: Business entity assessment, participation, securities and derivatives instrument assessment, assessment of company rights and obligations, assessment of intangible assets, assessment of economic losses caused by certain activities or events (economic loss), assessment of material transactions and/or conflict of interest transactions, fairness opinions, feasibility studies;<br>
+                        <strong>February 2004 – Present</strong>, Financial Consultant Herman & Partners Job Responsibilities as Managing Partner Business Assessment, Restructuring, Spin-off, Reorganization, Financing; Business Plan Banking Risk Management; Banking Corporate Governance; Merger & Acquisition (M&A), IPO & Investment Risk Management, Assessment and Fundamental Analysis of Restructuring Activities, Assessment, and Business Plan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="services" class="our-services section">
+        <div class="services-right-decs">
+            <img src="../assets/images/services-right-dec.png" alt="">
+        </div>
+        <div class="container">
+            <div class="services-left-decs">
+                <!-- <img src="../assets/images/services-left-dec.png" alt=""> -->
+            </div>
+            <div class="row itemsss" id="pusat" style="border-left: #fcb900 solid 2px;">
+                <div class="col-lg-12">
+                    <!-- No changes needed here -->
+                    <div class="info contact-infoss">
+                        <h5 class="text-start" style="">Education</h5>
+                        <p>
+                            <strong>June 2013</strong>. Certified Public Accountant<br>
+                            <strong>December 2011</strong>. MAPPI (Cert), Certified Indonesian Appraiser<br>
+                            <strong>Jan 05 – July 09</strong>. Doctoral Degree (PhD) at Padjadjaran University (UNPAD), Department of Financial Management, (Thesis: Highly Satisfactory). Dissertation: The Influence of Stock Return and Company Characteristics on Dynamic Capital Structure for Non-Financial Companies Listed on the Indonesia Stock Exchange (IDX)<br>
+                            <strong>Jan 05 – February 06</strong>. Bachelor's Degree (Accountant) at PPAK University of Indonesia<br>
+                            <strong>Sept 89 – Sept 91</strong>. Master of Business Administration (MBA), Finance Department, GS Fame Institute of Business affiliated with the Philippines Business Administration, Jakarta.<br>
+                            <strong>June 84 – June 89</strong>. Bachelor's Degree (S1), Accounting Department, Trisakti University, Jakarta<br>
+                            <strong>April 81 – April 84</strong>. Senior High School, SMA Bunda Hati Kudus, Jakarta
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="our-services section">
+        <div class="services-right-decs">
+            <img src="../assets/images/services-right-dec.png" alt="">
+        </div>
+        <div class="container">
+            <div class="services-left-decs">
+                <!-- <img src="../assets/images/services-left-dec.png" alt=""> -->
+            </div>
+            <div class="row itemsss" id="pusat" style="border-right: #fcb900 solid 2px;">
+                <div class="col-lg-12">
+                    <!-- No changes needed here -->
+                    <div class="info contact-infoss">
+                        <h5>Training</h5>
+                        <p>
+                            <strong>Sept 93 – Oct 93.</strong> Indonesian Bankers Institute – Credit and Marketing Analyst, including Principles, Credit Approaches, Project Financing Evaluation, Credit Analyst, Syndication, Loan Supervision, Monitoring, and Credit Management.<br>
+                            <strong>June 96 – October 96.</strong> Indover Asia Limited, Hong Kong – Loan Syndication and Project Financing. (Hong Kong);<br>
+                            <strong>Jan 05 – November 05.</strong> Indonesia Property Institute of Technology in collaboration with the Indonesian Property Study Center (PSPI) has completed the Certified Property Analyst (CPA) Program;<br>
+                            <strong>May 29, 06 – June 11, 06.</strong> Indonesian Accountants Association – "USAP REVIEW 2006";<br>
+                            <strong>January 5, 08.</strong> Level and Mapping of Dissertation Research in the Field of Finance – UNPAD;<br>
+                            <strong>February 21, 09.</strong> Outlook for Indonesia's Business Post-Global Financial Crisis – UNPAD<br>
+                            <strong>Oct 27, 09 – Oct 29, 09.</strong> Professional Director Program – IICD (Indonesia Institute Corporate Directorship)<br>
+                            <strong>December 2, 2009.</strong> One-day International Seminar on Corporate Social Responsibility "Global Economic Challenges, Opportunities, and Recovery;<br>
+                            <strong>October 29, 2010.</strong> Lecture on Management Accounting "Environmental Management to Improve Company Profits";<br>
+                            <strong>November 1-4, 2010.</strong> Governance Board Leadership Program for the Banking Sector Ayodya Resort, Bali, Indonesia;<br>
+                            <strong>November 19, 2010.</strong> Public Lecture on Financial Accounting PSAK 13: Investment Property based on IFRS;<br>
+                            <strong>December 30, 2010.</strong> Seminar on Financial Services Authority;<br>
+                            <strong>March 4, 2011.</strong> Economic and Financial Mathematics Techniques;<br>
+                            <strong>April 29, 2011.</strong> Corporate Governance, Corporate Social Responsibility, Synergy, Dean of La Salle University Philippines, Prof Dr. Wilfreida;<br>
+                            <strong>May 23-26, 2011.</strong> Bali, Towards One Global Standard, Challenges and Opportunities for IFRS Adoption in the Asia-Pacific Region organized by the Indonesian Accountants Association (IAI);<br>
+                            <strong>June 27, 2011.</strong> BI-OECD Regional Asian Seminar on Financial Literacy: Towards a National Financial Education Strategy;<br>
+                            <strong>March 23, 2014.</strong> Implementation of PSAK 46 (R2014) and Financial Reporting Related to Tax Uncertainty;<br>
+                            <strong>October 25, 2015.</strong> Audit Working Paper Workshop;<br>
+                            <strong>December 15, 2015.</strong> Critical Issues in Accounting and Audit PSAK 4, PSAK 15, PSAK 65, PSAK 66, and PSAK 67 Regarding Implementation in the Mineral and Oil & Gas Industry Workshop Critical Overview of the New SPAP Based on International Standards on Auditing (ISA);<br>
+                            <strong>June 28, 2016.</strong> Workshop Critical Overview of the New SPAP Based on International Standards on Auditing (ISA);
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="our-services section">
+        <div class="services-right-decs">
+            <img src="../assets/images/services-right-dec.png" alt="">
+        </div>
+        <div class="container">
+            <div class="services-left-decs">
+                <!-- <img src="../assets/images/services-left-dec.png" alt=""> -->
+            </div>
+            <div class="row itemsss" id="pusat" style="border-left: #fcb900 solid 2px;">
+                <div class="col-lg-12">
+                    <!-- No changes needed here -->
+                    <div class="info contact-infoss">
+                        <h5>Scientific Works of Dr. Herman Ruslim SE., AK., MM</h5>
+                        <p>
+                            <ul style="line-height: 2;">
+                                <li>Impact of Stock Yield on Dynamic Capital Structure; (<strong>Tarumanagara University</strong>);</li>
+                                <li>Testing Pecking Order Theory vs Tradeoff Theory; (<strong>Tarumanagara University</strong>);</li>
+                                <li>Restructuring Accounting (<strong>Tarumanagara University</strong>);</li>
+                                <li>Bank, Credit, Risks, and Issues (<strong>Ukrida University</strong>);</li>
+                                <li>Testing CAPM Theory; (<strong>UKRIDA</strong>);</li>
+                                <li>Capital Structure Testing (Pecking Order Theory): Empirical Analysis of Companies in LQ 45; (<strong>Trisakti School of Management</strong>);</li>
+                                <li>Factors Affecting Capital Structure (Trade-off Theory): Empirical Analysis of Companies in LQ 45; (<strong>Multimedia Nusantara University</strong>);</li>
+                                <li>Factors Affecting Initial Return in IPOs on the IDX; (<strong>Pancasila University</strong>)</li>
+                                <li>Capital Structure in LQ 45: Empirical Analysis Using Panel Data (Market Value vs Book Value); (<strong>Maranatha University</strong>);</li>
+                                <li>Implementation of Mergers, Acquisitions, and Restructuring in Companies in Indonesia (<strong>Ukrida</strong>);</li>
+                                <li>Implementation of Corporate Insurance Risk Management (<strong>Ukrida</strong>);</li>
+                                <li>Initial Public Offering Anomalies (<strong>Ukrida</strong>);</li>
+                                <li>Why Capital Structure is Dynamic (<strong>Tarumanagara University</strong>);</li>
+                                <li>Effect of Stock Price Volatility, Transaction Volume, and Transaction Frequency on Investor Behavior; (Behavioral Finance Approach);</li>
+                                <li>Effect of Macroeconomics on IHSG, Case Study on IDX.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-dec">
+        <img src="../assets/images/footer-dec.png" alt="">
+    </div>
+
+    <footer>
+      <div class="waves">
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+          <div class="wave" id="wave5"></div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="about footer-item">
+                      <div class="w-50 pt-5">
+                          <a href="index.html"><img src="../assets/images/logop-removebg-preview.png" alt=""></a>
+                      </div>
+                      <p class="p-5 text-white">We are Independent Appraisers. Trust | Integrity | Professionalism | Synergy</p>
+                      <p>
+                          <h4 class="text-white">Business License Number :</h4>
+                      </p>
+                      <p class="text-white iu">2.14.0120 KMK 66/KM.1/2014</p>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="services footer-item">
+                      <h4 class="text-white">Resources</h4>
+                      <ul>
+                          <li><a href="https://mappi.or.id/SitePages/Default.aspx"><img src="../assets/images/mappi2.png" class="w-50 pt-2" srcset=""></a></li>
+                          <li><a href="https://www.ivsc.org/"><img src="../assets/images/ivsc-blue.png" class="w-50 pt-2" srcset=""></a></li>
+                          <li><a href="https://www.ojk.go.id/id/Default.aspx"><img src="../assets/images/ojk-blue.png" class="w-50 pt-2" srcset=""></a> </li>
+                          <li>
+                              <a href="https://www.pefindo.com/"><img src="../assets/images/pefindo-blue.png" class="w-50 pt-2" srcset=""></a>
+                            </li>
+                            <li><a href="https://www.phei.co.id/"><img src="../assets/images/phai.jpeg" class="w-50 pt-2" srcset=""></a> </li>
+                          <li>
+                              <a href="https://www.pefindo.com/"><img src="../assets/images/bi.png" class="w-50 pt-2" srcset=""></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-12">
+                  <div class="copyright">
+                      <p>Copyright © 2023 KJPP-HMR.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+  
+
+
+  
+
+  <!-- Scripts -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/owl-carousel.js"></script>
+<script src="../assets/js/animation.js"></script>
+<script src="../assets/js/imagesloaded.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script src="../assets/font-awesome/js/pro.js"></script>
+<!-- Language Switch Script -->
+  
+<!-- Inisialisasi AOS -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Inisialisasi Accordion -->
+<script>
+  $(document).on("click", ".naccs .menu div", function() {
+    var numberIndex = $(this).index();
+
+    if (!$(this).is("active")) {
+      $(".naccs .menu div").removeClass("active");
+      $(".naccs ul li").removeClass("active");
+
+      $(this).addClass("active");
+      $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+      var listItemHeight = $(".naccs ul")
+        .find("li:eq(" + numberIndex + ")")
+        .innerHeight();
+      $(".naccs ul").height(listItemHeight + "px");
+    }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+var backToTopButton = document.getElementById("back-to-top-btn");
+
+// Function to check scroll position and toggle button visibility
+function toggleBackToTopButton() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+}
+
+// Show/hide the button based on scroll position
+window.onscroll = toggleBackToTopButton;
+
+// Scroll to the top when the button is clicked
+backToTopButton.onclick = function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+
+// Toggle button visibility when the page is loaded
+toggleBackToTopButton();
+});
+
+</script>
+<script>
+  // Fungsi untuk beralih antara konten Bahasa Inggris dan Indonesia
+  function toggleLanguage() {
+    // Dapatkan URL root dari halaman saat ini
+    var currentURL = window.location.href;
+    
+    // Periksa apakah bahasa saat ini adalah Indonesia
+    var isIndonesian = currentURL.includes('/id/');
+
+    // Bangun URL baru berdasarkan bahasa saat ini
+    var newURL = isIndonesian ? currentURL.replace('/id/', '/en/') : currentURL.replace('/en/', '/id/');
+
+    // Redirect ke URL baru
+    window.location.href = newURL;
+  }
+
+  // Pasang acara klik pada tombol beralih bahasa
+  document.getElementById("languageSwitchBtn").addEventListener("click", function() {
+    // Panggil fungsi toggleLanguage
+    toggleLanguage();
+  });
+</script>
+
+</body>
+</html>

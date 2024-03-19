@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>KJPP Herman Meirizki & Rekan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/logosr.png" type="image/x-icon">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/hmr.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--
+
+TemplateMo 565 Onix Digital
+
+https://templatemo.com/tm-565-onix-digital
+
+-->
+  </head>
+  <style>
+       #map {
+        margin-top: 20px; /* Atur jarak antara judul dan peta */
+    }
+    .contact-info {
+        margin-top: 20px; /* Atur jarak antara peta dan info kontak */
+    }
+    .jumbotron {
+    background: #2e3134;
+    color: white; /* Set text color to white or any contrasting color */
+    /* padding: 100px 25px; Adjust padding as needed */
+    /* text-align: center; */
+    padding-top: 9rem;
+  }
+  .jumbotron-2{
+    background: #fcb900;
+    padding-top: 9rem;
+  }
+  footer {
+        position: relative;
+        width: 100%;
+        background: #2e3134;
+        min-height: 100px;
+    }
+    footer .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(../assets/images/wave.png);
+        background-size: 1000px 100px;
+    }
+    footer .wave#wave2{
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWave 4s linear infinite;
+    }
+    footer .wave#wave3{
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animateWave2 4s linear infinite;
+    }
+    footer .wave#wave4{
+        z-index: 1000;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWave 3s linear infinite;
+    }
+    footer .wave#wave5{
+        z-index: 999;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animateWave 3s linear infinite;
+    }
+    @keyframes animateWave {
+        0%{
+            background-position-x: 1000px; 
+        } 
+        100% {
+            background-position-x: 0px; 
+
+        }
+    }
+    @keyframes animateWave2 {
+        0%{
+            background-position-x: 0px; 
+        } 
+        100% {
+            background-position-x: 1000px; 
+
+        }
+    }
+    .flex-container {
+      display: flex;
+    }
+    .infos {
+  font-size: 16px;
+}
+
+.contact-infoss ol {
+  /* list-style-type: decimal; */
+  padding-left: 20px;
+}
+
+.contact-infoss li {
+  margin-bottom: 8px;
+}
+.hidden {
+    display: none;
+  }
+  .penilaian-property {
+    font-weight: bold;
+    margin-top: 9px;
+  }
+  .penilaian-property.poin2 {
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .sub {
+    margin-left: 20px;
+  } 
+  </style>
+
+  <body>
+
+       
+    <button id="back-to-top-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <button id="languageSwitchBtn">
+        <img src="../assets/images/usa.png" style="width: 20px; image-resolution: 50px;" alt="">
+      </button>
+      
+ <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="../assets/images/logor.png">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class="active"><i class="fas fa-home"></i>&nbsp;Beranda</a></li>
+              <li class="scroll-to-section"><a href="index.html#services" class=""><i class="fas fa-edit"></i>&nbsp;Layanan Kami</a></li>
+              <li class="dropdown">
+                <a href="cabang.html" class="dropbtn"><i class="fas fa-building"></i>&nbsp;Kantor Cabang</a>
+                <div class="dropdown-content">
+                  <!-- Tambahkan link untuk setiap kantor cabang di bawah ini -->
+                  <a href="cabang.html#pusat">Pusat</a>
+                  <a href="cabang.html#cb">Jakarta Selatan</a>
+                  <a href="cabang.html#cb2">Tangerang</a>
+                  <a href="cabang.html#cb3">Sorong Papua</a>
+                  <a href="cabang.html#cb4">Surabaya</a>
+                </div>
+              </li>
+              <li class="scroll-to-section"><a href="partner.html"><i class="fas fa-handshake"></i>&nbsp;Rekan</a></li>
+              <li class="scroll-to-section"><a href="aboutus.html"><i class="fas fa-info-circle"></i>&nbsp;Tentang Kami</a></li>
+              <li class="scroll-to-section"><a href="contact-us.html"><i class="fas fa-envelope"></i>&nbsp;Hubungi Kami</a></li>
+            </ul>
+   
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+      <!-- ***** Header Area End ***** -->
+        <div id="services" class="our-services section">
+          <div class="services-right-decs">
+            <img src="../assets/images/services-right-dec.png" alt="">
+          </div>
+          <div class="container">
+            <div class="services-left-decs">
+              <!-- <img src="../assets/images/services-left-dec.png" alt=""> -->
+            </div>
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                  <h2>Layanan <em>Kami </em><span>?</span></h2>
+                  <!-- <span>About Us</span> -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab1">
+            <div class="row itemss" id="pusat" style="border-left: #fcb900 solid 2px; border-bottom: #fcb900 solid 2px;">
+                <h2 class="pt-3">Penilaian Bisnis</h2>
+            <div class="col-lg-7">
+                <div class="section-heading">
+                    <div id="map">
+                      <img src="../assets/images/pb.png" alt="" srcset="" style="border-radius: 20px; border-right: #706f6f solid 2px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+              <!-- No changes needed here -->
+              <div class="infos contact-infoss">
+                <p>
+                 <ol>
+              <li>1) Penilaian Nilai Perusahaan;</li>
+              <li>2) Penilaian Nilai Saham;</li>
+              <li>3) Penilaian Instrumen Keuangan;</li>
+              <li>4) Penilaian Aset Tidak Berwujud;</li>
+              <li>5) Pendapat Keadilan (Fairness Opinion);</li>
+              <li>6) Studi Kelayakan (Feasibility Study);</li>
+              <li>7) Penilaian Laba atau Rugi yang Timbul dari Kejadian Tertentu;</li>
+              <li>8) Penilaian Bisnis Lainnya.</li>              
+            </ol>
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>  
+        </div>
+        </div>
+      
+        <div id="services" class="our-services section profile">
+          <div class="services-right-decs">
+            <img src="../assets/images/services-right-dec.png" alt="">
+          </div>
+          <div class="container">
+            <div class="services-left-decs">
+              <!-- <img src="../assets/images/services-left-dec.png" alt=""> -->
+            </div>
+            <div class="row itemss" id="pusat" style="border-right: #fcb900 solid 2px; border-bottom: #fcb900 solid 2px;">
+                <h2 class="pt-3">Penilaian Aset</h2>
+                <div class="col-lg-12">
+                  <!-- No changes needed here -->
+                  <div class="infos contact-infoss">
+                    <p>
+                      <ol>
+                          <li class="sub">1.1) Penilaian Pengembangan Proyek;</li>
+                    <li class="sub">1.2) Penilaian Pengembangan Properti;</li>
+                    <li class="sub">1.3) Penilaian Aset Pertanian;</li>
+                    <li class="sub">1.4) Penilaian Aset Perikanan;</li>
+                    <li class="sub">1.5) Penilaian Aset Kehutanan;</li>
+                          <img src="../assets/images/ruko.png" class=" sub img img-thumbnail ruko" alt="">
+                          <img src="../assets/images/rumah.png" class="sub img img-thumbnail rumah" alt="">
+                          <img src="../assets/images/swait.jpg" class="sub img img-thumbnail sawit" alt="">
+                          <img src="../assets/images/gedung.png" class="sub img img-thumbnail gedung" alt="">
+                          <li class="penilaian-property poin2">2) Penilaian Personal Properti;</li>
+                  <ul>
+                    <li class="sub">2.1) Penilaian Mesin dan Peralatan</li>
+                    <li class="sub">2.2) Penilaian Mesin Pabrik dan Industri</li>
+                    <li class="sub">2.3) Penilaian Mesin Pembangkit dan Energi</li>
+                    <li class="sub">2.4) Penilaian Alat Berat</li>
+                    <li class="sub">2.5) Penilaiaan Kendaraan</li>
+                    <li class="sub">2.6) Penilaian Kapal</li>
+                    <li class="sub">2.7) Penilaian Pesawat Terbang</li>
+                    <li class="sub">2.8) Penilaian Satelit dan Peralatan Telekomunikasi</li>
+                    <li class="sub">2.9) Penilaian Persediaan</li>
+                    <li class="sub">2.10) Penilaian Peralatan Kantor</li>
+                    <li class="sub">2.11) Penilaian Peralatan Kesehatan</li>
+                    <li class="sub">2.12) Penilaian Aset Pertambangan;dan</li>
+                    <li class="sub">2.13) Penilaian Aset Lainnya</li>
+                            <img src="../assets/images/pabrik.jpeg" class=" sub img img-thumbnail pabrik mb-3" style="width: 300px;" alt="">
+                            <img src="../assets/images/pabrik3.jpeg" class=" sub img img-thumbnail pabrik mb-3" style="width: 300px;" alt="">
+                            <img src="../assets/images/pesawat2.png" class="sub img img-thumbnail pesawat mb-3" alt=""  style="width: 300px;">
+                            <img src="../assets/images/kapal.jpeg" class="sub img img-thumbnail kapal mb-3" alt=""  style="width: 300px;">
+                            <img src="../assets/images/kapal3.jpeg" class="sub img img-thumbnail kapal mb-3" alt=""  style="width: 300px;">
+                            <img src="../assets/images/energi.jpeg" class="sub img img-thumbnail energi mb-3" alt=""  style="width: 300px;">
+                            <img src="../assets/images/kesehatan.jpeg" class="sub img img-thumbnail kesehatan mb-3" alt=""  style="width: 300px;">
+                            <img src="../assets/images/tambang.jpeg" class=" sub img img-thumbnail tambang mb-3" alt=""  style="width: 300px;">
+                            <img src="../assets/images/kapal2.jpeg" class=" sub img img-thumbnail kapal mb-3" alt=""  style="width: 300px;">
+                          </ul>                  
+                      </ol>
+                    </p>
+                  </div>
+                </div>
+
+            
+          </div>
+        </div>
+        </div>
+      
+        <div class="footer-dec">
+          <img src="../assets/images/footer-dec.png" alt="">
+        </div>
+        <footer>
+          <div class="waves">
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+              <div class="wave" id="wave5"></div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6">
+<div class="about footer-item">
+            <div class="w-50 pt-5">
+              <a href="index.html"><img src="../assets/images/logop-removebg-preview.png" alt=""></a>
+            </div>
+            <p class="p-5 text-white">Kami Penilai Independen. Kepercayaan | Integritas | Profesionalisme | Sinergi</p>
+            <p>
+              <h4 class="text-white">Nomor Izin Usaha :</h4>
+            </p>
+            <p class="text-white iu">2.14.0120 KMK 66/KM.1/2014</p>
+          </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="services footer-item">
+                          <h4 class="text-white">Sumber Daya</h4>
+                          <ul>
+                              <li><a href="https://mappi.or.id/SitePages/Default.aspx"><img src="../assets/images/mappi2.png" class="w-50 pt-2" srcset=""></a></li>
+                              <li><a href="https://www.ivsc.org/"><img src="../assets/images/ivsc-blue.png" class="w-50 pt-2" srcset=""></a></li>
+                              <li><a href="https://www.ojk.go.id/id/Default.aspx"><img src="../assets/images/ojk-blue.png" class="w-50 pt-2" srcset=""></a> </li>
+                              <li>
+                                  <a href="https://www.pefindo.com/"><img src="../assets/images/pefindo-blue.png" class="w-50 pt-2" srcset=""></a>
+                                </li>
+                                <li><a href="https://www.phei.co.id/"><img src="../assets/images/phai.jpeg" class="w-50 pt-2" srcset=""></a> </li>
+                              <li>
+                                  <a href="https://www.pefindo.com/"><img src="../assets/images/bi.png" class="w-50 pt-2" srcset=""></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-12">
+                      <div class="copyright">
+                          <p>Copyright © 2023 KJPP-HMR.
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      
+  <!-- Scripts -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl-carousel.js"></script>
+  <script src="../assets/js/animation.js"></script>
+  <script src="../assets/js/imagesloaded.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <script src="../assets/font-awesome/js/pro.js"></script>
+ 
+  <script>
+    // Fungsi untuk beralih antara konten Bahasa Inggris dan Indonesia
+    function toggleLanguage() {
+      // Dapatkan URL root dari halaman saat ini
+      var currentURL = window.location.href;
+      
+      // Periksa apakah bahasa saat ini adalah Indonesia
+      var isIndonesian = currentURL.includes('/id/');
+  
+      // Bangun URL baru berdasarkan bahasa saat ini
+      var newURL = isIndonesian ? currentURL.replace('/id/', '/en/') : currentURL.replace('/en/', '/id/');
+  
+      // Redirect ke URL baru
+      window.location.href = newURL;
+    }
+  
+    // Pasang acara klik pada tombol beralih bahasa
+    document.getElementById("languageSwitchBtn").addEventListener("click", function() {
+      // Panggil fungsi toggleLanguage
+      toggleLanguage();
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  var backToTopButton = document.getElementById("back-to-top-btn");
+
+  // Function to check scroll position and toggle button visibility
+  function toggleBackToTopButton() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  }
+
+  // Show/hide the button based on scroll position
+  window.onscroll = toggleBackToTopButton;
+
+  // Scroll to the top when the button is clicked
+  backToTopButton.onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  // Toggle button visibility when the page is loaded
+  toggleBackToTopButton();
+});
+
+  </script>
+  <script>
+  // Acc
+    $(document).on("click", ".naccs .menu div", function() {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+          $(".naccs .menu div").removeClass("active");
+          $(".naccs ul li").removeClass("active");
+
+          $(this).addClass("active");
+          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+          var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+          $(".naccs ul").height(listItemHeight + "px");
+        }
+    });
+  </script>
+  </body>
+  </html>

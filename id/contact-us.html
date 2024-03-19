@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>KJPP Herman Meirizki & Rekan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/logosr.png" type="image/x-icon">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/hmr.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--
+
+TemplateMo 565 Onix Digital
+
+https://templatemo.com/tm-565-onix-digital
+
+-->
+  </head>
+  <style>
+       #map {
+        margin-top: 20px; /* Atur jarak antara judul dan peta */
+    }
+    .contact-info {
+        margin-top: 20px; /* Atur jarak antara peta dan info kontak */
+    }
+    .jumbotron {
+    background: #2e3134;
+    color: white; /* Set text color to white or any contrasting color */
+    /* padding: 100px 25px; Adjust padding as needed */
+    /* text-align: center; */
+    padding-top: 9rem;
+  }
+  .jumbotron-2{
+    background: #fcb900;
+    padding-top: 9rem;
+  }
+  footer {
+        position: relative;
+        width: 100%;
+        background: #2e3134;
+        min-height: 100px;
+    }
+    footer .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(../assets/images/wave.png);
+        background-size: 1000px 100px;
+    }
+    footer .wave#wave2{
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWave 4s linear infinite;
+    }
+    footer .wave#wave3{
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animateWave2 4s linear infinite;
+    }
+    footer .wave#wave4{
+        z-index: 1000;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWave 3s linear infinite;
+    }
+    footer .wave#wave5{
+        z-index: 999;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animateWave 3s linear infinite;
+    }
+    @keyframes animateWave {
+        0%{
+            background-position-x: 1000px; 
+        } 
+        100% {
+            background-position-x: 0px; 
+
+        }
+    }
+    @keyframes animateWave2 {
+        0%{
+            background-position-x: 0px; 
+        } 
+        100% {
+            background-position-x: 1000px; 
+
+        }
+    }
+    .tabs {
+      display: flex;
+      margin-top: 80px;
+    }
+
+    .tab {
+      padding: 10px 15px;
+      background-color: #ddd;
+      cursor: pointer;
+      margin-right: 5px;
+      margin-top: 5px;
+      border-radius: 5px 5px;
+    }
+
+    .tab:hover {
+      background-color: #ccc;
+    }
+
+    .tab.active {
+      background-color: #2a2a2a; /* Warna latar belakang untuk tab yang aktif */
+      color: #fcb900;
+    }
+
+    .tab-content {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 20px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+    h2 {
+      margin-top: 120px;
+      text-align: center;
+    }
+
+    .flex-container {
+      display: flex;
+    }
+</style>
+<body>
+
+<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav">
+          <!-- ***** Logo Start ***** -->
+          <a href="index.html" class="logo">
+            <img src="../assets/images/logor.png">
+          </a>
+          <!-- ***** Logo End ***** -->
+          <!-- ***** Menu Start ***** -->
+          <!-- ***** Menu Start ***** -->
+          <ul class="nav">
+            <li class="scroll-to-section"><a href="index.html" class=""><i class="fas fa-home"></i>&nbsp;Beranda</a></li>
+            <li class="scroll-to-section"><a href="index.html#services" class=""><i class="fas fa-edit"></i>&nbsp;Layanan Kami</a></li>
+            <li class="dropdown">
+              <a href="cabang.html" class="dropbtn"><i class="fas fa-building"></i>&nbsp;Kantor Cabang</a>
+              <div class="dropdown-content">
+                <!-- Tambahkan link untuk setiap kantor cabang di bawah ini -->
+                <a href="cabang.html#pusat">Pusat</a>
+                <a href="cabang.html#cb">Jakarta Selatan</a>
+                <a href="cabang.html#cb2">Tangerang</a>
+                <a href="cabang.html#cb3">Sorong Papua</a>
+                <a href="cabang.html#cb4">Surabaya</a>
+              </div>
+            </li>
+            <li class="scroll-to-section"><a href="partner.html"><i class="fas fa-handshake"></i>&nbsp;Rekan</a></li>
+            <li class="scroll-to-section"><a href="aboutus.html"><i class="fas fa-info-circle"></i>&nbsp;Tentang Kami</a></li>
+            <li class="scroll-to-section"><a href="contact-us.html" class="active"><i class="fas fa-envelope"></i>&nbsp;Hubungi Kami</a></li>
+          </ul>
+ 
+          <a class='menu-trigger'>
+              <span>Menu</span>
+          </a>
+          <!-- ***** Menu End ***** -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<button id="back-to-top-btn">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<button id="languageSwitchBtn">
+  <img src="../assets/images/usa.png" style="width: 20px; image-resolution: 50px;" alt="">
+</button>
+
+<div class="container">
+  <div class="section-heading">
+    <h2 class="so pt-4">Hubungi<em> Kami</em> <span></span></h2>
+</div>
+  <div class="tabs">
+    <div class="tab active" onclick="changeTab(1)">Pusat</div>
+    <div class="tab" onclick="changeTab(2)">Cabang Jakarta Selatan</div>
+    <div class="tab" onclick="changeTab(3)">Cabang Papua</div>
+    <div class="tab" onclick="changeTab(4)">Cabang Surabaya</div>
+    <div class="tab" onclick="changeTab(5)">Cabang Tangerang</div>
+  </div>
+  
+    <div class="tab-content active" id="tab1">
+      <div class="row">
+        <div class="col-md-7">
+          <div id="map">
+            <iframe style="border-radius: 9px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.693625980226!2d106.83991321149041!3d-6.303925261670086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed175d5b358d%3A0x26d5ecee1b2d0d98!2sThe%20AKKAS%20Commercial%20Building!5e0!3m2!1sid!2sid!4v1683617361338!5m2!1sid!2sid" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+          <!-- No changes needed here -->
+          <div class="info contact-infos">
+              <ul class="contact-list">
+                  <li>
+                      <span style="color: black;"><i class="fas fa-location"></i><a href="https://www.google.com/maps/place/KJPP+Herman+Meirizki+dan+Rekan+(Kantor+Pusat)/@-6.3038712,106.8426196,15z/data=!4m6!3m5!1s0x2e69f3c4eaf7275f:0x8708e52521147978!8m2!3d-6.3038712!4d106.8426196!16s%2Fg%2F11g1pyfds1?entry=ttu" style="color: #2a2a2a;">
+                          The AKKAS Commercial Building 6th Floor, Jl. T.B. Simatupang No.23 RT.011 RW. 004, Tanjung Barat, Jagakarsa, South Jakarta 12530
+                      </a></span>
+                  </li>
+                  <li>
+                      <span><i class="fa fa-phone-office text-sm"></i><a href="" style="color: #2a2a2a;">+62 21 2940 7271</a></span>
+                  </li>
+                  <li>
+                      <span><i class="fa fa-mobile text-sm"></i><a href="https://wa.link/2oskle" style="color: #2a2a2a;"> +62 812 8807 0436</a></span>
+                  </li>
+                  <li>
+                      <span><i class="fa fa-envelope text-sm"></i><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hmrvaluation@gmail.com" style="color: #2a2a2a;">hmrvaluation@gmail.com
+                      </a></span>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      </div>
+    
+  </div>
+  
+  <div class="tab-content" id="tab2">
+    <div class="row">
+      <div class="col-md-7">
+        <div id="map">
+          <iframe style="border-radius: 9px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.794715325098!2d106.80739105091861!3d-6.290690463301919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1fa599ef523%3A0xce4d3f317f5ed3f4!2sMenara%20165%2C%20Jl.%20Tahi%20Bonar%20Simatupang%2C%20RT.3%2FRW.3%2C%20Cilandak%20Tim.%2C%20Ps.%20Minggu%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012560!5e0!3m2!1sen!2sid!4v1674778170947!5m2!1sen!2sid" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+        <!-- No changes needed here -->
+        <div class="info contact-infos">
+          <ul class="contact-list">
+              <li>
+                  <span><i class="fas fa-location"></i><a style="color: #2a2a2a;" href="https://www.google.com/maps/place/Menara+165,+Jl.+TB+Simatupang,+RT.3%2FRW.3,+Cilandak+Tim.,+Ps.+Minggu,+Kota+Jakarta+Selatan,+Daerah+Khusus+Ibukota+Jakarta+12560/@-6.2906958,106.8095851,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f1fa599ef523:0xce4d3f317f5ed3f4!8m2!3d-6.2906958!4d106.8095851!16s%2Fg%2F11b7lywjl3?entry=ttu">
+                          MENARA 165 BUILDING 12A FLOOR UNIT A2
+                      </a></span>
+              </li>
+              <li>
+                  <span><i class="fa fa-phone-office text-sm"></i><a href=""  style="color: #2a2a2a;">+6221 7834 3013</a></span>
+              </li>
+              <li>
+                  <span><i class="fa fa-mobile text-sm"></i><a href="http://wa.link/267ppt"  style="color: #2a2a2a;">+62 857 1152 9800</a></span>
+              </li>
+              <li>
+                <span><i class="fa fa-envelope text-sm"></i><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hmrvaluation@gmail.com" style="color: #2a2a2a;">hmrvaluation@gmail.com
+                </a></span>
+            </li>
+          </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="tab-content" id="tab3">
+    <div class="row">
+      <div class="col-md-7">
+        <div id="map">
+          <iframe style="border-radius: 9px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3322093558118!2d131.31966231466978!3d-0.8944028993475368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d5955abee7b49dd%3A0xb63b0130aa0c680d!2sKJPP%20Herman%20Meirizki%20dan%20Rekan%20Cab.%20Sorong!5e0!3m2!1sid!2sid!4v1641541330806!5m2!1sid!2sid" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+        <!-- No changes needed here -->
+        <div class="info contact-infos">
+          <ul class="contact-list">
+              <li>
+                  <span><i class="fas fa-location"></i><a style="color: #2a2a2a;" href="https://www.google.com/maps/place/Kantor+Jasa+Penilai+Publik/@-0.8946005,131.3212868,19z/data=!4m15!1m8!3m7!1s0x2d59550aa08073d1:0xe9715bd5a33c2f7a!2sJl.+Melati+3+Harapan+Indah,+Klawuyuk,+Kec.+Sorong+Utara,+Kota+Sorong,+Papua+Bar.!3b1!8m2!3d-0.8947158!4d131.321665!16s%2Fg%2F11c0rpx3c1!3m5!1s0x2d5955abee7b49dd:0xb63b0130aa0c680d!8m2!3d-0.8944029!4d131.321851!16s%2Fg%2F11lrgft2m3?entry=ttu">
+                          Jl. Melati 3 Harapan Indah, Klawuyuk, Sorong Utara, Kota Sorong, West Papua 98416
+                      </a></span>
+              </li>
+              <li>
+                  <span><i class="fa fa-phone-office text-sm"></i><a href="https://wa.link/x1sb06" style="color: #2a2a2a;">+62 81312335443</a></span>
+              </li>
+              <li>
+                <span><i class="fa fa-envelope text-sm"></i><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hmrvaluation@gmail.com" style="color: #2a2a2a;">hmrvaluation@gmail.com
+                </a></span>
+            </li>
+          </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="tab4">
+    <div class="row">
+      <div class="col-md-7">
+        <div id="map">
+          <iframe style="border-radius: 9px;" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63317.71749523972!2d112.62405238827735!3d-7.313693448685862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x2dd7fdc654b695c1%3A0x6fb00ea3873e0ba6!2sKJPP%20Herman%20Meirizki%20dan%20Rekan%20Cabang%20Surabaya%2C%20Perumahan%20Permata%20Safira%20Regency%20Blok%20E5%20No.%2023%2C%20Lidah%20Kulon%2C%20Kec.%20Lakarsantri%2C%20Kota%20SBY%2C%20Jawa%20Timur%2060213!3m2!1d-7.3136947999999995!2d112.659072!4m0!5e0!3m2!1sid!2sid!4v1602666605810!5m2!1sid!2sid" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+        <!-- No changes needed here -->
+        <div class="info contact-infos">
+          <ul class="contact-list">
+              <li>
+                  <span><i class="fas fa-location"></i><a style="color: #2a2a2a;" href="https://www.google.com/maps?sca_esv=588248436&rlz=1C1UEAD_enID1066ID1066&sxsrf=AM9HkKlPhDn0KWvffH558kzsRReA-10OBA:1701835629321&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiGGtqcHAgaG1yIGNhYmFuZyBzdXJhYmF5YTIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRImQlQ6gFYgQdwAXgBkAEAmAFvoAH4AqoBAzMuMbgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgQQIxgnwgIGEAAYBxge4gMEGAAgQYgGAZAGBA&um=1&ie=UTF-8&fb=1&gl=id&sa=X&geocode=KcGVtlTG_dctMaYLPoejDrBv&daddr=Jl.+Tlogo+Tanjung+No.IV+No.57+B,+Bangkingan,+Kec.+Lakarsantri,+Surabaya,+Jawa+Timur+60213">
+                          Perumahan Permata Safira Regency Blok E5 No. 23, Lidah Kulon, Kec. Lakarsantri, Surabaya, East Java 60213
+                      </a></span>
+              </li>
+              <li>
+                  <span><i class="fa fa-phone-office text-sm"></i><a style="color: #2a2a2a;" href="">(031) 7536820</a></span>
+              </li>
+              <li>
+                  <span><i class="fa fa-mobile text-sm"></i><a style="color: #2a2a2a;" href="https://wa.link/pc5t4m">+62 853-3161-6812</a></span>
+              </li>
+              <li>
+                <span><i class="fa fa-envelope text-sm"></i><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hmrvaluation@gmail.com" style="color: #2a2a2a;">hmrvaluation@gmail.com
+                </a></span>
+            </li>
+          </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="tab-content" id="tab5">
+    <div class="row">
+      <div class="col-md-7">
+        <div id="map">
+          <iframe style="border-radius: 9px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.049931199137!2d106.65818271431363!3d-6.257153095470922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fba43f1fbd65%3A0x75d0017f527ff640!2sKJPP+Herman+Meirizki+dan+Rekan!5e0!3m2!1sen!2sid!4v1496569143142" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+        <!-- No changes needed here -->
+        <div class="info contact-infos">
+          <ul class="contact-list">
+              <li>
+                  <span><i class="fas fa-location"></i><a style="color: #2a2a2a;" href="https://www.google.com/maps/place/KJPP+Herman+Meirizki+dan+Rekan/@-6.257153,106.660371,15z/data=!4m6!3m5!1s0x2e69fba43f1fbd65:0x75d0017f527ff640!8m2!3d-6.2571531!4d106.6603714!16s%2Fg%2F11bxjcn8zt?hl=en-US&entry=ttu">
+                          VILLA MELATI MAS BLOK H9 NO. 60, KEL. PONDOK JAGUNG, KEC. SERPONG UTARA, TANGERANG SELATAN – BANTEN 15326
+                      </a></span>
+              </li>
+              <li>
+                  <span><i class="fa fa-phone-office text-sm"></i><a href="" style="color: #2a2a2a;">+62 21 538 4495</a></span>
+              </li>
+              <li>
+                  <span><i class="fa fa-mobile text-sm"></i><a style="color: #2a2a2a;" href="https://wa.link/w9fz1n">+62 818 793 638</a></span>
+              </li>
+              <li>
+                <span><i class="fa fa-envelope text-sm"></i><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hmrvaluation@gmail.com" style="color: #2a2a2a;">hmrvaluation@gmail.com
+                </a></span>
+            </li>
+          </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="footer-dec">
+    <img src="../assets/images/footer-dec.png" alt="">
+  </div>
+
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+      <div class="wave" id="wave5"></div>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about footer-item">
+            <div class="w-50 pt-5">
+              <a href="index.html"><img src="../assets/images/logop-removebg-preview.png" alt=""></a>
+            </div>
+            <p class="p-5 text-white">Kami Penilai Independen. Kepercayaan | Integritas | Profesionalisme | Sinergi</p>
+            <p>
+              <h4 class="text-white">Nomor Izin Usaha :</h4>
+            </p>
+            <p class="text-white iu">2.14.0120 KMK 66/KM.1/2014</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="services footer-item">
+            <h4 class="text-white">Sumber Daya</h4>
+            <ul>
+              <li><a href="https://mappi.or.id/SitePages/Default.aspx"><img src="../assets/images/mappi2.png" class="w-50 pt-2" srcset=""></a></li>
+              <li><a href="https://www.ivsc.org/"><img src="../assets/images/ivsc-blue.png" class="w-50 pt-2" srcset=""></a></li>
+              <li><a href="https://www.ojk.go.id/id/Default.aspx"><img src="../assets/images/ojk-blue.png" class="w-50 pt-2" srcset=""></a> </li>
+              <li>
+                <a href="https://www.pefindo.com/"><img src="../assets/images/pefindo-blue.png" class="w-50 pt-2" srcset=""></a> 
+              </li>
+              <li><a href="https://www.phei.co.id/"><img src="../assets/images/phai.jpeg" class="w-50 pt-2" srcset=""></a> </li>
+              <li>
+                <a href="https://www.pefindo.com/"><img src="../assets/images/bi.png" class="w-50 pt-2" srcset=""></a>
+            </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright">
+            <p>Copyright © 2023 KJPP-HMR. 
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+<script>
+  function changeTab(tabNumber) {
+    // Hide all tab contents
+    document.querySelectorAll('.tab-content').forEach(function (tabContent) {
+      tabContent.classList.remove('active');
+    });
+
+    // Remove 'active' class from all tabs
+    document.querySelectorAll('.tab').forEach(function (tab) {
+      tab.classList.remove('active');
+    });
+
+    // Show the selected tab content
+    document.getElementById('tab' + tabNumber).classList.add('active');
+    // Add 'active' class to the clicked tab
+    document.querySelector('.tab:nth-child(' + tabNumber + ')').classList.add('active');
+  }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+var backToTopButton = document.getElementById("back-to-top-btn");
+
+// Function to check scroll position and toggle button visibility
+function toggleBackToTopButton() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+}
+
+// Show/hide the button based on scroll position
+window.onscroll = toggleBackToTopButton;
+
+// Scroll to the top when the button is clicked
+backToTopButton.onclick = function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+
+// Toggle button visibility when the page is loaded
+toggleBackToTopButton();
+});
+
+</script>
+<script>
+  // Fungsi untuk beralih antara konten Bahasa Inggris dan Indonesia
+  function toggleLanguage() {
+    // Dapatkan URL root dari halaman saat ini
+    var currentURL = window.location.href;
+    
+    // Periksa apakah bahasa saat ini adalah Indonesia
+    var isIndonesian = currentURL.includes('/id/');
+
+    // Bangun URL baru berdasarkan bahasa saat ini
+    var newURL = isIndonesian ? currentURL.replace('/id/', '/en/') : currentURL.replace('/en/', '/id/');
+
+    // Redirect ke URL baru
+    window.location.href = newURL;
+  }
+
+  // Pasang acara klik pada tombol beralih bahasa
+  document.getElementById("languageSwitchBtn").addEventListener("click", function() {
+    // Panggil fungsi toggleLanguage
+    toggleLanguage();
+  });
+</script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/owl-carousel.js"></script>
+  <script src="../assets/js/animation.js"></script>
+  <script src="../assets/js/imagesloaded.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <script src="../assets/font-awesome/js/pro.js"></script>
+  <script src="../assets/js/contact-us.js"></script>
+
+  <script>
+  // Acc
+    $(document).on("click", ".naccs .menu div", function() {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+          $(".naccs .menu div").removeClass("active");
+          $(".naccs ul li").removeClass("active");
+
+          $(this).addClass("active");
+          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+          var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+          $(".naccs ul").height(listItemHeight + "px");
+        }
+    });
+  </script>
+</body>
+</html>

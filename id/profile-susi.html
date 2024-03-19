@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>KJPP Herman Meirizki & Rekan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>KJPP Herman Meirizki & Rekan</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/logosr.png" type="image/x-icon">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/hmr.css">
+    <link rel="stylesheet" href="../assets/css/animated.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+  <style>
+       #map {
+        margin-top: 20px; /* Atur jarak antara judul dan peta */
+    }
+    .contact-infoss {
+        margin-top: 0px; /* Atur jarak antara peta dan info kontak */
+    }
+    .jumbotron {
+    background: #2e3134;
+    color: white; /* Set text color to white or any contrasting color */
+    /* padding: 100px 25px; Adjust padding as needed */
+    /* text-align: center; */
+    padding-top: 9rem;
+  }
+  .jumbotron-2{
+    background: #fcb900;
+    padding-top: 9rem;
+  }
+  footer {
+        position: relative;
+        width: 100%;
+        background: #2e3134;
+        min-height: 100px;
+    }
+    footer .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(../assets/images/wave.png);
+        background-size: 1000px 100px;
+    }
+    footer .wave#wave2{
+        z-index: 1000;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWave 4s linear infinite;
+    }
+    footer .wave#wave3{
+        z-index: 999;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animateWave2 4s linear infinite;
+    }
+    footer .wave#wave4{
+        z-index: 1000;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWave 3s linear infinite;
+    }
+    footer .wave#wave5{
+        z-index: 999;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animateWave 3s linear infinite;
+    }
+    @keyframes animateWave {
+        0%{
+            background-position-x: 1000px; 
+        } 
+        100% {
+            background-position-x: 0px; 
+
+        }
+    }
+    @keyframes animateWave2 {
+        0%{
+            background-position-x: 0px; 
+        } 
+        100% {
+            background-position-x: 1000px; 
+
+        }
+    }
+    .flex-container {
+      display: flex;
+    }
+  .hidden {
+    display: none;
+  }
+  strong {
+    color: #0066cc;
+    margin-bottom: 9px;
+  }
+
+  </style>
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <!-- <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div> -->
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="../assets/images/logor.png">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class=""><i class="fas fa-home"></i>&nbsp;Beranda</a></li>
+              <li class="scroll-to-section"><a href="index.html#services" class=""><i class="fas fa-edit"></i>&nbsp;Layanan Kami</a></li>
+              <li class="dropdown">
+                <a href="cabang.html" class="dropbtn"><i class="fas fa-building"></i>&nbsp;Kantor Cabang</a>
+                <div class="dropdown-content">
+                  <!-- Tambahkan link untuk setiap kantor cabang di bawah ini -->
+                  <a href="cabang.html#pusat">Pusat</a>
+                  <a href="cabang.html#cb">Jakarta Selatan</a>
+                  <a href="cabang.html#cb2">Tangerang</a>
+                  <a href="cabang.html#cb3">Sorong Papua</a>
+                  <a href="cabang.html#cb4">Surabaya</a>
+                </div>
+              </li>
+              <li class="scroll-to-section"><a href="partner.html" class="active"><i class="fas fa-handshake"></i>&nbsp;Rekan</a></li>
+              <li class="scroll-to-section"><a href="aboutus.html"><i class="fas fa-info-circle"></i>&nbsp;Tentang Kami</a></li>
+              <li class="scroll-to-section"><a href="contact-us.html"><i class="fas fa-envelope"></i>&nbsp;Hubungi Kami</a></li>
+            </ul>
+   
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <button id="languageSwitchBtn">
+    <img src="../assets/images/usa.png" style="width: 20px; image-resolution: 50px;" alt="">
+  </button>
+  
+  <div id="pricing" class="pricing-tables">
+    <div class="tables-left-dec">
+      <img src="../assets/images/tables-left-dec.png" alt="">
+    </div>
+    <div class="tables-right-dec">
+      <img src="../assets/images/tables-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2 class="vm">Petinggi <em> Perusahaan </em></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+            <div class=""><img src="../assets/images/partner/photo2.png" alt=""></div>
+        </div>
+        <div class="col-lg-9" data-aos="fade-right">
+            <div class="itema first-item">
+              <h4 class="pb-3">Pimpinan Rekan</h4>
+             <!-- Language Switch Button -->
+             <!-- <h5 class="pt-3 pb-3">Tentang</h5> -->
+             <!-- <h5 class="pb-3">Periode Bekerja sebagai Pelatih</h5> -->
+             <p>
+              
+Susi Meirizki telah memperoleh gelar sarjana teknik sipil dari Universitas Diponegoro. Dia memiliki pengalaman dalam penilaian properti selama lebih dari 13 tahun dengan keahlian dalam penilaian tanah dan bangunan, pengembangan lahan, penilaian properti komersial dan residensial, serta penilaian properti di industri pertanian dan kehutanan industri. Susi Meirizki pernah menjabat sebagai manajer di Kantor Jasa Penilai Publik (KJPP) Toha, Okky, Heru dan Rekan. Saat ini, ia menjabat sebagai Partner Leader di Kantor Jasa Penilai Publik (KJPP) Herman Meirizki dan Rekan dengan nomor lisensi penilaian publik P-1.13.00374 untuk Penilaian Properti.
+          </p>
+          
+          <h5 class="pt-5 pb-3">Pengalaman Kerja</h5>
+          <p>
+            <strong>2014&nbsp;– Sekarang:</strong> Partner Leader at KJPP Herman Meirizki dan Rekan<br>
+            <strong>2008&nbsp;- 2014:</strong> Manager at KJPP Toha, Okky, Heru dan Rekan<br>
+            <strong>2005&nbsp;- 2008:</strong> Appraiser at PT Piesta Penilai<br> 
+            <strong>2002&nbsp;- 2005:</strong> Appraiser at PT Pronilai
+            
+          </p>
+             </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <div id="services" class="our-services section">
+              <div class="services-right-decs">
+                  <img src="../assets/images/services-right-dec.png" alt="">
+              </div>
+              <div class="container">
+                  <div class="services-left-decs">
+                      <!-- <img src="../assets/images/services-left-dec.png" alt=""> -->
+                  </div>
+                  <div class="row itemsss" id="pusat" style="border-left: #fcb900 solid 2px;">
+                    <div class="col-lg-12">
+                      <!-- No changes needed here -->
+                      <div class="info contact-infoss">
+                            <h5 class="text-start" style="">Pengalaman Penilaian Properti</h5>
+                            <p>
+                                <ul style="line-height: 2;">
+                                    <li>Pelabuhan Perikanan Nusantara Pelabuhan Ratu</li>
+                                    <li>PT Wika Beton, Tbk</li>
+                                    <li>PT Perusahaan Pengelola Aset (Persero)</li>
+                                    <li>Pelabuhan Perikanan Samudera Bitung</li>
+                                    <li>Dinas Perhubungan Komunikasi dan Informatika</li>
+                                    <li>Dinas Tata Ruang, Pemukiman dan Kebersihan</li>
+                                    <li>PT Hotel Sahid Jaya International</li>
+                                    <li>PT Bakrie Development</li>
+                                    <li>PT Bakrie Swasakti Utama</li>
+                                    <li>PT Petronas Niaga Indonesia</li>
+                                    <li>PT Bank Mandiri (Persero) Tbk</li>
+                                    <li>PT Adhi Karya (Persero) Tbk</li>
+                                    <li>PT Bank Rakyat Indonesia (Persero), Tbk</li>
+                                    <li>PT Intraco Penta, Tbk.</li>
+                                    <li>PT Odira Energy Persada</li>
+                                    <li>PT Duta Anggada Realty</li>
+                                    <li>PT Patra Jasa</li>
+                                    <li>PT Semen Padang</li>
+                                    <li>PT Sarana Multi Infrastruktur (Persero)</li>
+                                    <li>PT Waskita Karya (Persero)</li>
+                                    <li>PT Bank CIMB Niaga, Tbk.</li>
+                                    <li>PT Aetra Air Tangerang</li>
+                                    <li>PT Bosowa Duta Energasindo</li>
+                                    <li>PT The Pakubuwono Development</li>
+                                    <li>PT Energy Exploitasi Indonesia</li>
+                                    <li>PT Kobexindo Tractors</li>
+                                    <li>PT Indonesia Marine</li>
+                                    <li>PT MNC Land, Tbk.</li>
+                                    <li>PT Maxima Inti Land</li>
+                                    <li>PT Inka Belyan Internasional</li>
+                                    <li>Dll.</li>
+                                </ul>
+                                
+                          </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div id="services" class="our-services section">
+            <div class="services-right-decs">
+                <img src="../assets/images/services-right-dec.png" alt="">
+            </div>
+            <div class="container">
+                <div class="services-left-decs">
+                    <!-- <img src="../assets/images/services-left-dec.png" alt=""> -->
+                </div>
+                <div class="row itemsss" id="pusat" style="border-right: #fcb900 solid 2px;">
+                  <div class="col-lg-12">
+                    <!-- No changes needed here -->
+                    <div class="info contact-infoss">
+                      <h5>Pengalaman Penilaian Studi Kelayakan</h5>
+                      <p>
+                        <ul>
+                            <li>PT Kampia Nusa Dua</li>
+                            <li>BNR, Bakrie Land Development, Tbk</li>
+                            <li>Dll.</li>
+                        </ul>                        
+                      </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="footer-dec">
+    <img src="../assets/images/footer-dec.png" alt="">
+</div>
+<footer>
+  <div class="waves">
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+    <div class="wave" id="wave5"></div>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="about footer-item">
+          <div class="w-50 pt-5">
+            <a href="index.html"><img src="../assets/images/logop-removebg-preview.png" alt=""></a>
+          </div>
+          <p class="p-5 text-white">Kami Penilai Independen. Kepercayaan | Integritas | Profesionalisme | Sinergi</p>
+          <p>
+            <h4 class="text-white">Nomor Izin Usaha :</h4>
+          </p>
+          <p class="text-white iu">2.14.0120 KMK 66/KM.1/2014</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="services footer-item">
+          <h4 class="text-white">Sumber Daya</h4>
+          <ul>
+            <li><a href="https://mappi.or.id/SitePages/Default.aspx"><img src="../assets/images/mappi2.png" class="w-50 pt-2" srcset=""></a></li>
+            <li><a href="https://www.ivsc.org/"><img src="../assets/images/ivsc-blue.png" class="w-50 pt-2" srcset=""></a></li>
+            <li><a href="https://www.ojk.go.id/id/Default.aspx"><img src="../assets/images/ojk-blue.png" class="w-50 pt-2" srcset=""></a> </li>
+            <li>
+              <a href="https://www.pefindo.com/"><img src="../assets/images/pefindo-blue.png" class="w-50 pt-2" srcset=""></a> 
+            </li>
+            <li><a href="https://www.phei.co.id/"><img src="../assets/images/phai.jpeg" class="w-50 pt-2" srcset=""></a> </li>
+            <li>
+              <a href="https://www.pefindo.com/"><img src="../assets/images/bi.png" class="w-50 pt-2" srcset=""></a>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="copyright">
+          <p>Copyright © 2023 KJPP-HMR. 
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/owl-carousel.js"></script>
+<script src="../assets/js/animation.js"></script>
+<script src="../assets/js/imagesloaded.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script src="../assets/font-awesome/js/pro.js"></script>
+<!-- Language Switch Script -->
+<!-- Language Switch Script -->
+<!-- Language Switch Script -->
+<script>
+    // Function to toggle between English and Indonesian content
+    function toggleLanguage() {
+      // Get all elements with the 'data-lang' attribute
+      var elements = document.querySelectorAll('[data-lang]');
+  
+      // Loop through each element
+      elements.forEach(function(element) {
+        // Toggle the 'hidden' class based on the current language
+        element.classList.toggle('hidden');
+      });
+    }
+  
+    // Attach a click event to the language switch button
+    document.getElementById("languageSwitchBtn").addEventListener("click", function() {
+      // Call the toggleLanguage function
+      toggleLanguage();
+    });
+  </script>
+  
+  
+  
+<!-- Inisialisasi AOS -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Inisialisasi Accordion -->
+<script>
+  $(document).on("click", ".naccs .menu div", function() {
+    var numberIndex = $(this).index();
+
+    if (!$(this).is("active")) {
+      $(".naccs .menu div").removeClass("active");
+      $(".naccs ul li").removeClass("active");
+
+      $(this).addClass("active");
+      $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+      var listItemHeight = $(".naccs ul")
+        .find("li:eq(" + numberIndex + ")")
+        .innerHeight();
+      $(".naccs ul").height(listItemHeight + "px");
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+var backToTopButton = document.getElementById("back-to-top-btn");
+
+// Function to check scroll position and toggle button visibility
+function toggleBackToTopButton() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+}
+
+// Show/hide the button based on scroll position
+window.onscroll = toggleBackToTopButton;
+
+// Scroll to the top when the button is clicked
+backToTopButton.onclick = function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+
+// Toggle button visibility when the page is loaded
+toggleBackToTopButton();
+});
+
+</script>
+<script>
+  // Fungsi untuk beralih antara konten Bahasa Inggris dan Indonesia
+  function toggleLanguage() {
+    // Dapatkan URL root dari halaman saat ini
+    var currentURL = window.location.href;
+    
+    // Periksa apakah bahasa saat ini adalah Indonesia
+    var isIndonesian = currentURL.includes('/id/');
+
+    // Bangun URL baru berdasarkan bahasa saat ini
+    var newURL = isIndonesian ? currentURL.replace('/id/', '/en/') : currentURL.replace('/en/', '/id/');
+
+    // Redirect ke URL baru
+    window.location.href = newURL;
+  }
+
+  // Pasang acara klik pada tombol beralih bahasa
+  document.getElementById("languageSwitchBtn").addEventListener("click", function() {
+    // Panggil fungsi toggleLanguage
+    toggleLanguage();
+  });
+</script>
+
+</body>
+</html>
